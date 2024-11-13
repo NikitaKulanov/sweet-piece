@@ -1,0 +1,76 @@
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+#logo {
+    font-size: 70px;
+    font-weight: 400;
+    text-transform: uppercase;
+    background-image: linear-gradient(180deg, #00BAFC, #127ce6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Itim, serif;
+}
+
+.navbar-header {
+    border-bottom: 3px solid #FEB2EE;
+}
+
+.header-img {
+    width: 30px;
+    height: 30px;
+    margin-top: 3px;
+}
+
+/*.button-header {*/
+/*    --bs-btn-border-radius: 14px;*/
+/*    background-color: white;*/
+/*    font-size: 24px;*/
+/*}*/
+
+.container-fluid .button-header {
+    border-radius: 14px;
+    background-color: white;
+    font-size: 24px;
+}
+
+.button-header:hover {
+    background-color: rgb(248, 248, 248)
+}
+
+#sign-up {
+    border: #5BA0E5 solid 2px;
+    color: #5BA0E5;
+}
+
+#sign-up:hover {
+    color: #338AE0;
+}
+
+#log-in {
+    border: #F88FF6 solid 2px;
+    color: #F84EF6;
+}
+
+#log-in:hover {
+    color: #F84EF6;
+}
+
+.log_sign_text {
+    margin-left: 5px;
+}
+
+#map {
+
+}
+
+#shopping {
+
+}
+
+.img-50px {
+    width: 50px;
+    height: 50px;
+}

@@ -1,0 +1,328 @@
+#product-page {
+    padding-top: 120px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.breadcrumb a {
+    color: #481A1A;
+}
+
+.breadcrumb {
+    --bs-breadcrumb-font-size: 20px;
+    font-weight: 600;
+}
+
+#product-details img {
+    border-radius: 8px;
+}
+
+#title {
+    color: #0B2349;
+    /*font-size: 38px;*/
+    font-weight: 600;
+    border-bottom: 2px solid #C4C4C4;
+}
+
+/*#purchase {*/
+/*    display: flex;*/
+/*    align-self: center;*/
+/*    padding-left: 10px;*/
+/*    margin-top: 30px;*/
+/*    width: 90%;*/
+/*    flex-wrap: wrap;*/
+/*}*/
+
+#price {
+    white-space: nowrap;
+    font-size: 39px;
+    font-weight: 600;
+    margin-right: 30px;
+}
+
+#buy_block {
+    margin-left: 30px;
+}
+
+#buy-button {
+    background-color: #F58686;
+    color: #FFFFFF;
+    border-radius: 14px;
+    font-size: 23px;
+    font-weight: 600;
+    box-shadow: 00px 4px 4px 00px rgba(0, 0, 0, 0.07);
+    user-select: none;
+    white-space: nowrap;
+}
+/*#breadcrumb {*/
+/*    display: flex;*/
+/*    width: 100%;*/
+/*    height: 30px;*/
+/*}*/
+
+/*.breadcrumb_item {*/
+/*    font-weight: 600;*/
+/*    font-size: 18px;*/
+/*    color: #481A1A;*/
+/*    text-decoration: none;*/
+/*    white-space: nowrap;*/
+/*}*/
+
+/*.breadcrumb_item:hover {*/
+/*    color: #000000;*/
+/*}*/
+
+/*.separator {*/
+/*    margin-right: 10px;*/
+/*    margin-left: 10px;*/
+/*}*/
+
+/*#product_details {*/
+/*    display: flex;*/
+/*    width: 100%;*/
+/*}*/
+
+/*#additional_info {*/
+/*    width: 100%;*/
+/*    !*height: 130px;*!*/
+/*}*/
+
+
+/*.slideshow_container {*/
+/*    max-width: 617px;*/
+/*    !*max-height: 617px;*!*/
+/*    position: relative;*/
+/*    margin: auto;*/
+/*    width: 50%;*/
+/*}*/
+
+/*.slides {*/
+/*    display: none;*/
+/*}*/
+
+/*.slides img {*/
+/*    border-radius: 8px;*/
+/*}*/
+
+/*#prev, #next {*/
+/*    cursor: pointer;*/
+/*    position: absolute;*/
+/*    top: 50%;*/
+/*    width: auto;*/
+/*    margin-top: -22px;*/
+/*    padding: 16px;*/
+/*    color: white;*/
+/*    font-weight: bold;*/
+/*    font-size: 18px;*/
+/*    transition: 0.6s ease;*/
+/*    border-radius: 0 3px 3px 0;*/
+/*    user-select: none;*/
+/*}*/
+
+/*#next {*/
+/*    right: 0;*/
+/*    border-radius: 3px 0 0 3px;*/
+/*}*/
+
+/*#prev:hover, #next:hover {*/
+/*    background-color: rgba(0,0,0,0.8);*/
+/*}*/
+
+/*.number_text {*/
+/*    color: #f2f2f2;*/
+/*    font-size: 12px;*/
+/*    padding: 8px 12px;*/
+/*    position: absolute;*/
+/*    top: 0;*/
+/*}*/
+
+/*.dot {*/
+/*    cursor: pointer;*/
+/*    height: 15px;*/
+/*    width: 15px;*/
+/*    margin: 0 2px;*/
+/*    background-color: #bbb;*/
+/*    border-radius: 50%;*/
+/*    display: inline-block;*/
+/*    transition: background-color 0.6s ease;*/
+/*}*/
+
+/*.active, .dot:hover {*/
+/*    background-color: #717171;*/
+/*}*/
+
+/*.fade {*/
+/*    animation-name: fade;*/
+/*    animation-duration: 1.5s;*/
+/*}*/
+
+/*@keyframes fade {*/
+/*    from {opacity: .4}*/
+/*    to {opacity: 1}*/
+/*}*/
+
+/*#dots {*/
+/*    text-align:center;*/
+/*    margin-top: 10px;*/
+/*}*/
+
+/*#product_info {*/
+/*    width: 50%;*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*}*/
+
+/*#product_title {*/
+/*    width: 90%;*/
+/*    color: #0B2349;*/
+/*    align-self: center;*/
+/*    font-size: 38px;*/
+/*    font-weight: 600;*/
+/*    margin: 0;*/
+/*    padding-bottom: 5px;*/
+/*    border-bottom: 2px solid #C4C4C4;*/
+/*}*/
+
+/*#purchase {*/
+/*    display: flex;*/
+/*    align-self: center;*/
+/*    padding-left: 10px;*/
+/*    margin-top: 30px;*/
+/*    width: 90%;*/
+/*    flex-wrap: wrap;*/
+/*}*/
+
+/*#product_price {*/
+/*    white-space: nowrap;*/
+/*    font-size: 39px;*/
+/*    font-weight: 600;*/
+/*    margin-right: 30px;*/
+/*}*/
+
+/*!*#buy_block {*!*/
+/*!*    margin-left: 30px;*!*/
+/*!*}*!*/
+
+/*#buy_button {*/
+/*    background-color: #F58686;*/
+/*    color: #FFFFFF;*/
+/*    padding: 10px 15px 10px 15px;*/
+/*    border-radius: 14px;*/
+/*    align-self: center;*/
+/*    font-size: 23px;*/
+/*    font-weight: 600;*/
+/*    box-shadow: 00px 4px 4px 00px rgba(0, 0, 0, 0.07);*/
+/*    cursor: pointer;*/
+/*    user-select: none;*/
+/*    white-space: nowrap;*/
+/*}*/
+
+/*#buy_button:hover {*/
+/*    background-color: #F66868;*/
+/*}*/
+
+.description {
+    background-color: #f7f7f7;
+    width: 90%;
+    align-self: center;
+    /*border: 2px solid #C4C4C4;*/
+    color: #333;
+    border-radius: 10px;
+    font-size: 23px;
+    flex-wrap: wrap;
+}
+
+/*.detail {*/
+/*    margin-bottom: 5px;*/
+/*}*/
+
+/*.bold {*/
+/*    font-weight: 600;*/
+/*}*/
+
+/*!*.line {*!*/
+/*!*    flex-direction: row;*!*/
+/*!*}*!*/
+
+.description .tags-links {
+    font-size: 18px;
+    font-weight: 400;
+    color: #FFFFFF;
+    background-color: #7FC9FF;
+}
+
+.description .tags-links:hover {
+    color: #FFFFFF;
+    background-color: #7FC9FF;
+}
+
+/*.tags_title {*/
+/*    margin-bottom: 5px;*/
+/*    font-weight: 600;*/
+/*}*/
+
+/*.tags {*/
+/*    display: flex;*/
+/*    flex-wrap: wrap;*/
+/*}*/
+
+#bar {
+    /*display: flex;*/
+    /*padding-top: 15px;*/
+    border-bottom: 2px solid #dee2e6;
+}
+
+.item-bar {
+    /*margin-right: 10px;*/
+    font-size: 23px;
+    color: #00000099;
+    cursor: pointer;
+    font-weight: 600;
+    /*padding: 5px 5px 5px 5px;*/
+    border: 1px solid #FFFFFF;
+    /*padding: 5px 5px 5px 5px;*/
+}
+
+/*.item_bar:hover {*/
+/*    !*border-bottom: 2px solid #FF5B4C;*!*/
+/*    border: 1px solid #dee2e6;*/
+/*    border-radius: 5px 5px 00px 00px;*/
+/*}*/
+
+/*.border_item {*/
+/*    border: 1px solid #FFFFFF;*/
+/*}*/
+
+.border-item:hover {
+    border: 1px solid #dee2e6;
+    border-radius: 5px 5px 00px 00px;
+}
+
+.border-item-red {
+    border-bottom: 3px solid #FF5B4C;
+}
+
+
+.bar-description {
+
+    background-color: #f7f7f7;
+
+    /*align-self: center;*/
+    /*border: 2px solid #C4C4C4;*/
+    color: #333;
+    border-radius: 00px 00px 10px 10px;
+    /*padding: 1px 19px 1px 19px;*/
+    display: none;
+    /*flex-direction: column;*/
+    font-size: 23px;
+    /*flex-wrap: wrap;*/
+}
+
+.star {
+    font-size: 2rem; /* Размер звезды */
+    color: #ccc; /* Цвет неактивной звезды */
+
+}
+.star.active {
+    color: #f39c12; /* Цвет активной звезды */
+}
