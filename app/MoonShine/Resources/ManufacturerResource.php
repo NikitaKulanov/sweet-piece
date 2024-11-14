@@ -44,8 +44,6 @@ class ManufacturerResource extends ModelResource
      */
     public function rules(Model $item): array
     {
-        return [
-            'name' => ['required', 'string', 'unique:manufacturers']
-        ];
+        return [];
     }
 }

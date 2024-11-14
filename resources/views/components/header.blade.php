@@ -12,10 +12,15 @@
                          src="{{ Vite::asset('resources/images/icon-map.png') }}" alt="Карты">
                 </div>
                 <a id="logo" class="text-nowrap lh-1 mx-3" href="/">Sweet Piece</a>
-                <div class="d-flex align-items-center justify-content-center px-0">
+
+                <a id="shopping" href="/" class="d-flex position-relative align-items-center justify-content-center px-0">
                     <img id="shopping" class="img-50px" onclick="location.href='{{url('/')}}';"
                          src="{{ Vite::asset('resources/images/icon-shopping-cart.png') }}" alt="Корзина">
-                </div>
+                    <span class="position-absolute badge rounded-pill bg-danger">
+                        99+
+                    </span>
+                </a>
+
             </div>
 
             <a id="log-in" class="btn button-header px-2 d-flex" href="#" role="button">

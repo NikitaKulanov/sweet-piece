@@ -85,8 +85,6 @@ class ProductResource extends ModelResource
      */
     public function rules(Model $item): array
     {
-        return [
-            'title' => ['required', 'string', 'unique:products']
-        ];
+        return [];
     }
 }

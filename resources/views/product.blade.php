@@ -1,5 +1,4 @@
 <x-main-layout>
-{{--    {{dd($product)}}--}}
     <div class="d-flex flex-column" id="product-page">
 
         <div class="d-flex justify-content-between pe-3 ps-1">
@@ -12,12 +11,24 @@
                 </ol>
             </nav>
 
-            <div id="rating" class="d-flex">
-                <span class="star active">&#9733;</span>
-                <span class="star active">&#9733;</span>
-                <span class="star active">&#9733;</span>
-                <span class="star active">&#9733;</span>
-                <span class="star">&#9733;</span>
+            <div id="rating" class="d-flex mt-2">
+                @for ($i = 1; $i <= 5; $i++)
+                    @if ($i - 0.5 <= $product->rating)
+                        @if ($i - 0.5 == $product->rating)
+                            <img class="star me-1"
+                                 src="{{ Vite::asset('resources/images/products/star-0,5.png') }}"
+                                 alt="">
+                        @else
+                            <img class="star me-1"
+                                 src="{{ Vite::asset('resources/images/products/star-1.png') }}"
+                                 alt="">
+                        @endif
+                    @else
+                        <img class="star me-1"
+                             src="{{ Vite::asset('resources/images/products/star-0.png') }}"
+                             alt="">
+                    @endif
+                @endfor
             </div>
 
         </div>
@@ -26,12 +37,12 @@
 
             <div id="carouselExampleCaptions" class="carousel slide col-6" data-bs-ride="carousel">
                 <div class="carousel-indicators">
-                    @foreach($product->images as $img)
+                    @foreach($product->imagesForCarousel() as $img)
                         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="{{$loop->index}}" class="@if ($loop->first) active @endif" @if ($loop->first) aria-current="true" @endif aria-label="Slide 1"></button>
                     @endforeach
                 </div>
                 <div class="carousel-inner">
-                    @foreach($product->images as $img)
+                    @foreach($images as $img)
                         <div class="carousel-item @if ($loop->first) active @endif" data-bs-interval="5000">
                             <img src="{{ '/storage/' . $img->image_name }}" class="d-block w-100" alt="...">
                         </div>

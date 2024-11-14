@@ -326,3 +326,8 @@
 .star.active {
     color: #f39c12; /* Цвет активной звезды */
 }
+
+
+#rating {
+    height: 30px;
+}

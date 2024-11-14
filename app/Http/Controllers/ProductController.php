@@ -36,7 +36,10 @@ class ProductController extends Controller
      */
     public function show(string $id)
     {
-        return view('product', ['product' => Product::find($id)]);
+        return view('product', [
+            'product' => $product = Product::find($id),
+            'images' => $product->imagesForCarousel()
+        ]);
     }
 
     /**

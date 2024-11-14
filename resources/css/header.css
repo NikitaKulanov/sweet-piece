@@ -66,8 +66,19 @@ header {
 
 }
 
-#shopping {
+#shopping span {
+    top: -1px;
+    right: -12px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
 
+.badge-count {
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*right: 0;*/
+
+
+    /*transform: translate(-50%, -50%);*/
 }
 
 .img-50px {

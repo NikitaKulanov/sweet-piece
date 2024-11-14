@@ -5,9 +5,9 @@
             @foreach($products as $product)
                 <div class="product flex-column d-flex align-items-center mb-3">
                     <div class="product-img">
-                        <a href="/product">
+                        <a href="/products/{{$product->id}}">
                             <img class="product-img"
-                                 src="{{ 'storage/' . $product->images()->where('main', 1)->first()->image_name }}"
+                                 src="{{ 'storage/' . $product->imageCard()->image_name }}"
                                  alt="">
                         </a>
                     </div>
@@ -16,37 +16,22 @@
                             <div class="product-title">{{$product->title}}</div>
                             <div class="d-flex my-1">
                                 @for ($i = 1; $i <= 5; $i++)
-                                    @if ($i + 0.5 == $product->rating)
-                                        <img class="star me-1"
-                                             src="{{ Vite::asset('resources/images/products/star-0,5.png') }}"
-                                             alt="">
-                                    @else
-                                        @if ($i <= $product->rating)
+                                    @if ($i - 0.5 <= $product->rating)
+                                        @if ($i - 0.5 == $product->rating)
                                             <img class="star me-1"
-                                                 src="{{ Vite::asset('resources/images/products/star-1.png') }}"
+                                                 src="{{ Vite::asset('resources/images/products/star-0,5.png') }}"
                                                  alt="">
                                         @else
                                             <img class="star me-1"
-                                                 src="{{ Vite::asset('resources/images/products/star-0.png') }}"
+                                                 src="{{ Vite::asset('resources/images/products/star-1.png') }}"
                                                  alt="">
                                         @endif
+                                    @else
+                                        <img class="star me-1"
+                                             src="{{ Vite::asset('resources/images/products/star-0.png') }}"
+                                             alt="">
                                     @endif
                                 @endfor
-{{--                                <img class="star me-1"--}}
-{{--                                     src="{{ Vite::asset('resources/images/products/star-1.png') }}"--}}
-{{--                                     alt="">--}}
-{{--                                <img class="star me-1"--}}
-{{--                                     src="{{ Vite::asset('resources/images/products/star-1.png') }}"--}}
-{{--                                     alt="">--}}
-{{--                                <img class="star me-1"--}}
-{{--                                     src="{{ Vite::asset('resources/images/products/star-1.png') }}"--}}
-{{--                                     alt="">--}}
-{{--                                <img class="star me-1"--}}
-{{--                                     src="{{ Vite::asset('resources/images/products/star-0,5.png') }}"--}}
-{{--                                     alt="">--}}
-{{--                                <img class="star me-1"--}}
-{{--                                     src="{{ Vite::asset('resources/images/products/star-0.png') }}"--}}
-{{--                                     alt="">--}}
                             </div>
                             <div class="d-flex">
                                 <div class="product-price-weigh">{{$product->price}} р.</div>

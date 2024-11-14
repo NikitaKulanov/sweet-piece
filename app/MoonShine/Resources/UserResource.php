@@ -45,8 +45,6 @@ class UserResource extends ModelResource
      */
     public function rules(Model $item): array
     {
-        return [
-            'email' => ['required', 'string', 'unique:users']
-        ];
+        return [];
     }
 }

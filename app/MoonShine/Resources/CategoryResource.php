@@ -46,8 +46,6 @@ class CategoryResource extends ModelResource
      */
     public function rules(Model $item): array
     {
-        return [
-            'name' => ['required', 'string', 'unique:categories']
-        ];
+        return [];
     }
 }
