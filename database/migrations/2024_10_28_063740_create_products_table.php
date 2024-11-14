@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('title')->unique();
             $table->decimal('price', 10, 2);
-            $table->decimal('weight', 10, 2)->nullable();
+            $table->smallInteger('weight')->nullable();
             $table->text('short_description')->nullable();
             $table->text('description')->nullable();
             $table->decimal('rating', 2, 1)->default(1.0);

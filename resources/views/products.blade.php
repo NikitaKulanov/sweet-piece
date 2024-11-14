@@ -1,9 +1,9 @@
 <x-main-layout>
     <div class="row flex-nowrap justify-content-between g-0" id="products-page">
-        <div class="col-9 d-flex flex-wrap justify-content-between" id="products-container">
+        <div class="col-9 d-flex flex-wrap gap-3" id="products-container">
 
             @foreach($products as $product)
-                <div class="product flex-column d-flex align-items-center mb-3">
+                <div class="product flex-column d-flex align-items-center">
                     <div class="product-img">
                         <a href="/products/{{$product->id}}">
                             <img class="product-img"

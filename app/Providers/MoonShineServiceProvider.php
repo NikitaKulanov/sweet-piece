@@ -56,7 +56,7 @@ class MoonShineServiceProvider extends MoonShineApplicationServiceProvider
                 ),
             ]),
 
-            MenuGroup::make('Продукты', [
+            MenuGroup::make('Ассортимент', [
                 MenuItem::make(
                     'Продукты',
                     new ProductResource()
